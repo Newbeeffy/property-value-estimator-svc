@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# SQLite history database (runtime data — lives under /data via PVC in k8s)
+*.db
+
+# Build artifacts (docker save output)
+*.tar

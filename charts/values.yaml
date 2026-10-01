@@ -1,0 +1,22 @@
+replicaCount: 1
+
+image:
+  repository: interview/property-value-estimator-svc
+  tag: latest
+  pullPolicy: IfNotPresent
+
+modelService:
+  url: "http://house-price-predict-svc"
+  timeoutSeconds: 5
+
+storage:
+  # Size of the PVC backing the SQLite history at /data.
+  size: 128Mi
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+  limits:
+    cpu: 500m
+    memory: 512Mi

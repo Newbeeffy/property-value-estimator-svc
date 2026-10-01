@@ -1,0 +1,6 @@
+apiVersion: v2
+name: property-value-estimator-svc
+description: Facade service that validates property inputs and delegates to the model service
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
